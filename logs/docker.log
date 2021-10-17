@@ -1,0 +1,606 @@
+/usr/lib/python2.7/dist-packages/supervisor/options.py:298: UserWarning: Supervisord is running as root and it is searching for its configuration file in default locations (including its current working directory); you probably want to specify a "-c" argument specifying an absolute path to a configuration file for improved security.
+  'Supervisord is running as root and it is searching '
+2021-10-17 14:08:36,997 CRIT Supervisor running as root (no user in config file)
+2021-10-17 14:08:36,997 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2021-10-17 14:08:37,003 INFO RPC interface 'supervisor' initialized
+2021-10-17 14:08:37,003 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2021-10-17 14:08:37,003 INFO supervisord started with pid 1
+2021-10-17 14:08:38,009 INFO spawned: 'kms' with pid 9
+2021-10-17 14:08:38,011 INFO spawned: 'openvidu-server' with pid 10
+2021-10-17 14:08:38,351 DEBG 'kms' stdout output:
+0:00:00.324248500     9 0x55e80ef27160 DEBUG   KurentoModuleManager ModuleManager.cpp:158:loadModules: Looking for modules, path: /usr/lib/x86_64-linux-gnu/kurento/modules
+0:00:00.324393600     9 0x55e80ef27160 DEBUG   KurentoModuleManager ModuleManager.cpp:174:loadModules: Found file: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmselementsmodule.so
+
+2021-10-17 14:08:38,360 DEBG 'kms' stdout output:
+0:00:00.333103100     9 0x55e80ef27160 INFO    KurentoModuleManager ModuleManager.cpp:90:loadModule: Load file: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmselementsmodule.so, module name: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmselementsmodule.so
+
+2021-10-17 14:08:38,360 DEBG 'kms' stdout output:
+0:00:00.333332200     9 0x55e80ef27160 INFO    KurentoModuleManager ModuleManager.cpp:137:loadModule: Loaded module: elements, version: 6.16.0, date: Feb 26 2021 17:01:47
+0:00:00.333392600     9 0x55e80ef27160 DEBUG   KurentoModuleManager ModuleManager.cpp:174:loadModules: Found file: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmsfiltersmodule.so
+
+2021-10-17 14:08:38,362 DEBG 'kms' stdout output:
+0:00:00.335707300     9 0x55e80ef27160 INFO    KurentoModuleManager ModuleManager.cpp:90:loadModule: Load file: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmsfiltersmodule.so, module name: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmsfiltersmodule.so
+0:00:00.335782900     9 0x55e80ef27160 INFO    KurentoModuleManager ModuleManager.cpp:137:loadModule: Loaded module: filters, version: 6.16.0, date: Feb 26 2021 17:10:31
+0:00:00.335861400     9 0x55e80ef27160 DEBUG   KurentoModuleManager ModuleManager.cpp:174:loadModules: Found file: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmscoremodule.so
+
+2021-10-17 14:08:38,363 DEBG 'kms' stdout output:
+0:00:00.336403200     9 0x55e80ef27160 INFO    KurentoModuleManager ModuleManager.cpp:90:loadModule: Load file: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmscoremodule.so, module name: /usr/lib/x86_64-linux-gnu/kurento/modules/libkmscoremodule.so
+0:00:00.336451900     9 0x55e80ef27160 INFO    KurentoModuleManager ModuleManager.cpp:137:loadModule: Loaded module: core, version: 6.16.0, date: Feb 26 2021 16:53:03
+0:00:00.336519100     9 0x55e80ef27160 INFO      KurentoMediaServer main.cpp:240:main: Kurento Media Server version: 6.16.0
+0:00:00.336527700     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:249:loadConfig: Reading configuration from: /etc/kurento/kurento.conf.json
+
+2021-10-17 14:08:38,363 DEBG 'kms' stdout output:
+0:00:00.336840900     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:183:loadModulesConfigFromDir: Looking for config files in /etc/kurento/modules
+
+2021-10-17 14:08:38,363 DEBG 'kms' stdout output:
+0:00:00.336998400     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:183:loadModulesConfigFromDir: Looking for config files in /etc/kurento/modules/kurento
+0:00:00.337104900     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/HttpEndpoint.conf.ini
+0:00:00.337185900     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/RecorderEndpoint.conf.ini
+
+2021-10-17 14:08:38,364 DEBG 'kms' stdout output:
+0:00:00.337326300     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/SdpEndpoint.conf.json
+0:00:00.337522200     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/WebRtcEndpoint.conf.ini
+
+2021-10-17 14:08:38,364 DEBG 'kms' stdout output:
+0:00:00.337679800     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/MediaElement.conf.ini
+0:00:00.337837500     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/BaseRtpEndpoint.conf.ini
+0:00:00.337930300     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/UriEndpoint.conf.ini
+
+2021-10-17 14:08:38,365 DEBG 'kms' stdout output:
+0:00:00.338087800     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:209:loadModulesConfigFromDir: Loaded module config: /etc/kurento/modules/kurento/PlayerEndpoint.conf.ini
+0:00:00.338111400     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:265:loadConfig: Configuration loaded successfully
+0:00:00.338166000     9 0x55e80ef27160 INFO       KurentoLoadConfig loadConfig.cpp:271:loadConfig: Loaded config in effect:
+{
+    "mediaServer": {
+        "resources": {
+            "\/\/exceptionLimit": "0.8",
+            "\/\/killLimit": "0.7",
+            "garbageCollectorPeriod": "240",
+            "\/\/": "Default: false",
+            "disableRequestCache": "false"
+        },
+        "net": {
+            "websocket": {
+                "\/\/ipv6": "false",
+                "port": "8888",
+                "secure": {
+                    "\/\/port": "8433",
+                    "\/\/certificate": "cert+key.pem",
+                    "\/\/": "Password for the private key, if one was set when the key was created",
+                    "\/\/password": ""
+                },
+                "\/\/registrar": {
+                    "\/\/address": "ws:\/\/localhost:9090",
+                    "\/\/localAddress": "localhost"
+                },
+                "\/\/": "Default: SOMAXCONN (128)",
+                "\/\/connqueue": "128",
+                "path": "kurento",
+                "threads": "10"
+            }
+        }
+    },
+    "configPath": "\/etc\/kurento",
+    "modules": {
+        "kurento": {
+            "HttpEndpoint": {
+                "serverAddress": "localhost",
+                "port": "9091",
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "RecorderEndpoint": {
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "SdpEndpoint": {
+                "numAudioMedias": "1",
+                "numVideoMedias": "1",
+                "audioCodecs": [
+                    {
+                        "name": "opus\/48000\/2",
+                        "\/\/": "Next is an example about how a codec can be configured.",
+                        "\/\/": "WARNING: Usage of properties is not yet supported",
+                        "\/\/properties": {
+                            "\/\/maxcodedaudiobandwidth": "16000",
+                            "\/\/maxaveragebitrate": "20000",
+                            "\/\/stereo": "1",
+                            "\/\/useinbandfec": "1",
+                            "\/\/usedtx": "0"
+                        }
+                    },
+                    {
+                        "name": "PCMU\/8000"
+                    },
+                    {
+                        "name": "AMR\/8000"
+                    }
+                ],
+                "videoCodecs": [
+                    {
+                        "name": "VP8\/90000"
+                    },
+                    {
+                        "name": "H264\/90000"
+                    }
+                ],
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "WebRtcEndpoint": {
+                "stunServerAddress": "stun.l.google.com",
+                "stunServerPort": "19302",
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "MediaElement": {
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "BaseRtpEndpoint": {
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "UriEndpoint": {
+                "defaultPath": "file:\/\/\/var\/lib\/kurento\/",
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            },
+            "PlayerEndpoint": {
+                "configPath": "\/etc\/kurento\/modules\/kurento"
+            }
+        }
+    }
+}
+
+0:00:00.338192500     9 0x55e80ef27160 INFO    KurentoServerMethods ServerMethods.cpp:90:ServerMethods: Using above 80% of system limits will throw NOT_ENOUGH_RESOURCES exception
+0:00:00.338209300     9 0x55e80ef27160 INFO    KurentoServerMethods ServerMethods.cpp:109:ServerMethods: System limits: unlimited threads, 1048576 files
+
+2021-10-17 14:08:38,365 DEBG 'kms' stdout output:
+0:00:00.338313500     9 0x55e80ef27160 INFO       KurentoWorkerPool WorkerPool.cpp:67:WorkerPool: Worker thread pool size: 8
+
+2021-10-17 14:08:38,366 DEBG 'kms' stdout output:
+0:00:00.339299500     9 0x55e80ef27160 INFO    KurentoServerMethods ServerMethods.cpp:144:ServerMethods: RPC Request Cache is ENABLED
+0:00:00.339430400     9 0x55e80ef27160 INFO    KurentoWebSocketTransport WebSocketTransport.cpp:179:initWebSocket: WebSocket server (ws://) listening on address '::', port 8888
+
+2021-10-17 14:08:38,366 DEBG 'kms' stdout output:
+0:00:00.339446800     9 0x55e80ef27160 INFO    KurentoWebSocketTransport WebSocketTransport.cpp:88:WebSocketTransport: Secure WebSocket server (wss://) not enabled
+
+2021-10-17 14:08:38,366 DEBG 'kms' stdout output:
+0:00:00.340110600     9 0x55e80ef27160 INFO      KurentoMediaServer main.cpp:259:main: Kurento Media Server started
+
+2021-10-17 14:08:39,367 INFO success: kms entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-17 14:08:39,367 INFO success: openvidu-server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2021-10-17 14:08:40,010 DEBG 'openvidu-server' stdout output:
+
+______________________________________________
+   ____               __      ___     _
+  / __ \              \ \    / (_)   | |
+ | |  | |_ __   ___ _ _\ \  / / _  __| |_   _
+ | |  | | '_ \ / _ \ '_ \ \/ / | |/ _` | | | |
+ | |__| | |_) |  __/ | | \  /  | | (_| | |_| |
+  \____/| .__/ \___|_| |_|\/   |_|\__,_|\__,_|
+        | |
+        |_|                     version 2.20.0
+______________________________________________
+
+
+2021-10-17 14:08:40,203 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,200 [main] io.openvidu.server.OpenViduServer - Starting OpenViduServer on 767363ec5359 with PID 10 (/openvidu-server.jar started by root in /)
+
+2021-10-17 14:08:40,204 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,204 [main] io.openvidu.server.OpenViduServer - No active profile set, falling back to default profiles: default
+
+2021-10-17 14:08:40,463 DEBG 'openvidu-server' stdout output:
+[ERROR] 2021-10-17 14:08:40,461 [main] io.openvidu.server.config.OpenviduConfig - .env file not found at /.env
+
+2021-10-17 14:08:40,621 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,621 [main] io.openvidu.server.OpenViduServer - Started OpenViduServer in 1.721 seconds (JVM running for 2.6)
+
+2021-10-17 14:08:40,642 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,642 [main] io.openvidu.server.OpenViduServer -
+
+
+   Configuration properties
+   ------------------------
+
+   * CERTIFICATE_TYPE=selfsigned
+   * DOMAIN_OR_PUBLIC_IP=localhost
+   * HTTPS_PORT=4443
+   * KMS_URIS=["ws://localhost:8888/kurento"]
+   * MEDIA_NODES_PUBLIC_IPS=[]
+   * OPENVIDU_CDR=false
+   * OPENVIDU_CDR_PATH=/opt/openvidu/cdr
+   * OPENVIDU_RECORDING=false
+   * OPENVIDU_RECORDING_AUTOSTOP_TIMEOUT=120
+   * OPENVIDU_RECORDING_COMPOSED_BASICAUTH=true
+   * OPENVIDU_RECORDING_COMPOSED_URL=
+   * OPENVIDU_RECORDING_CUSTOM_LAYOUT=/opt/openvidu/custom-layout
+   * OPENVIDU_RECORDING_DEBUG=false
+   * OPENVIDU_RECORDING_NOTIFICATION=publisher_moderator
+   * OPENVIDU_RECORDING_PATH=/opt/openvidu/recordings
+   * OPENVIDU_RECORDING_PUBLIC_ACCESS=false
+   * OPENVIDU_RECORDING_VERSION=2.19.0
+   * OPENVIDU_SECRET=MY_SECRET
+   * OPENVIDU_SESSIONS_GARBAGE_INTERVAL=900
+   * OPENVIDU_SESSIONS_GARBAGE_THRESHOLD=3600
+   * OPENVIDU_STREAMS_ALLOW_TRANSCODING=false
+   * OPENVIDU_STREAMS_FORCED_VIDEO_CODEC=VP8
+   * OPENVIDU_STREAMS_VIDEO_MAX_RECV_BANDWIDTH=1000
+   * OPENVIDU_STREAMS_VIDEO_MAX_SEND_BANDWIDTH=1000
+   * OPENVIDU_STREAMS_VIDEO_MIN_RECV_BANDWIDTH=300
+   * OPENVIDU_STREAMS_VIDEO_MIN_SEND_BANDWIDTH=300
+   * OPENVIDU_WEBHOOK=false
+   * OPENVIDU_WEBHOOK_ENDPOINT=
+   * OPENVIDU_WEBHOOK_EVENTS=["sessionCreated","sessionDestroyed","participantJoined","participantLeft","webrtcConnectionCreated","webrtcConnectionDestroyed","recordingStatusChanged","filterEventDispatched","signalSent","mediaNodeStatusChanged","autoscaling","nodeCrashed"]
+   * OPENVIDU_WEBHOOK_HEADERS=[]
+
+
+
+
+2021-10-17 14:08:40,645 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,644 [main] io.openvidu.server.OpenViduServer - Using /dev/urandom for secure random generation
+
+2021-10-17 14:08:40,753 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,753 [main] io.openvidu.server.OpenViduServer - Starting OpenViduServer on 767363ec5359 with PID 10 (/openvidu-server.jar started by root in /)
+
+2021-10-17 14:08:40,754 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:40,753 [main] io.openvidu.server.OpenViduServer - No active profile set, falling back to default profiles: default
+
+2021-10-17 14:08:42,231 DEBG 'openvidu-server' stdout output:
+[ERROR] 2021-10-17 14:08:42,230 [main] io.openvidu.server.config.OpenviduConfig - .env file not found at /.env
+
+2021-10-17 14:08:42,742 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:42,741 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 4443 (https)
+
+2021-10-17 14:08:42,759 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:42,759 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["https-jsse-nio-0.0.0.0-4443"]
+
+2021-10-17 14:08:42,759 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:42,759 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+
+2021-10-17 14:08:42,760 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:42,759 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+
+2021-10-17 14:08:42,866 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:42,866 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+
+2021-10-17 14:08:42,867 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:42,866 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2064 ms
+
+2021-10-17 14:08:43,131 DEBG 'openvidu-server' stdout output:
+[WARN] 2021-10-17 14:08:43,130 [main] io.openvidu.server.rest.ApiRestPathRewriteFilter - Support for deprecated REST API paths enabled. Update your REST API clients to use the new paths
+
+2021-10-17 14:08:43,131 DEBG 'openvidu-server' stdout output:
+[WARN] 2021-10-17 14:08:43,131 [main] io.openvidu.server.rest.ApiRestPathRewriteFilter - Deprecated path support will be removed in a future release. You can disable old path support to test compatibility with property SUPPORT_DEPRECATED_API=false
+
+2021-10-17 14:08:43,182 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,181 [main] io.openvidu.server.OpenViduServer - OpenVidu CDR service is disabled (may be enable with 'OPENVIDU_CDR=true')
+[INFO] 2021-10-17 14:08:43,181 [main] io.openvidu.server.OpenViduServer - OpenVidu Webhook service is disabled (may be enabled with 'OPENVIDU_WEBHOOK=true')
+
+2021-10-17 14:08:43,225 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,225 [main] io.openvidu.server.OpenViduServer - OpenVidu Server using one KMS: ws://localhost:8888/kurento
+
+2021-10-17 14:08:43,285 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,285 [main] org.kurento.jsonrpc.client.JsonRpcClientNettyWebSocket -  Connecting native client
+[INFO] 2021-10-17 14:08:43,285 [main] org.kurento.jsonrpc.client.JsonRpcClientNettyWebSocket -  Creating new NioEventLoopGroup
+
+2021-10-17 14:08:43,522 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,521 [nioEventLoopGroup-2-1] org.kurento.jsonrpc.client.JsonRpcClientNettyWebSocket -  Initiating new Netty channel. Will create new handler too!
+
+2021-10-17 14:08:43,672 DEBG 'kms' stdout output:
+0:00:05.645938100     9 0x55e80ef27500 DEBUG   KurentoWebSocketTransport WebSocketTransport.cpp:554:openHandler: Client connected from http://localhost:8888
+
+2021-10-17 14:08:43,696 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,695 [AbstractJsonRpcClientWebSocket-reqResEventExec-e2-t0] io.openvidu.server.kurento.kms.KmsManager - Kurento Client "connected" event for KMS ws://localhost:8888/kurento [org.kurento.client.KurentoClient@fe4fad9]
+
+2021-10-17 14:08:43,696 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,696 [main] io.openvidu.server.recording.service.RecordingManager - OpenVidu recording service is disabled
+
+2021-10-17 14:08:43,726 DEBG 'kms' stdout output:
+0:00:05.700140300     9 0x7f6bc40036a0 DEBUG   KurentoWebSocketTransport WebSocketTransport.cpp:532:processMessage: Message: {"id":1,"method":"ping","params":{"interval":240000},"jsonrpc":"2.0"}
+
+2021-10-17 14:08:43,727 DEBG 'kms' stdout output:
+0:00:05.700257100     9 0x7f6bc40036a0 INFO    KurentoServerMethods ServerMethods.cpp:811:ping: WebSocket Ping/Pong
+0:00:05.700334300     9 0x7f6bc40036a0 DEBUG   KurentoWebSocketTransport WebSocketTransport.cpp:534:processMessage: Response: {"id":1,"jsonrpc":"2.0","result":{"value":"pong"}}
+
+2021-10-17 14:08:43,744 DEBG 'openvidu-server' stdout output:
+[WARN] 2021-10-17 14:08:43,743 [main] io.openvidu.server.coturn.CoturnCredentialsService - No COTURN server is installed in the host machine. Response: /bin/sh: 1: turnadmin: not found
+
+2021-10-17 14:08:43,744 DEBG 'openvidu-server' stdout output:
+[ERROR] 2021-10-17 14:08:43,744 [main] io.openvidu.server.coturn.CoturnCredentialsService - No COTURN server will be automatically configured for clients
+
+2021-10-17 14:08:43,771 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,770 [main] io.openvidu.server.core.SessionManager - Garbage collector for non active sessions initialized. Running every 900 seconds and cleaning up non active Sessions more than 3600 seconds old
+
+2021-10-17 14:08:43,818 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:43,818 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'jsonrpcTaskScheduler'
+
+2021-10-17 14:08:44,050 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,049 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+
+2021-10-17 14:08:44,163 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,163 [main] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+
+2021-10-17 14:08:44,503 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,503 [main] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c0da600, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d269ed7, org.springframework.security.web.header.HeaderWriterFilter@3af9aa66, org.springframework.web.filter.CorsFilter@285c08c8, org.springframework.security.web.authentication.logout.LogoutFilter@72889280, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4287d447, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41c89d2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e7f2e0f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d4602a, org.springframework.security.web.session.SessionManagementFilter@3003697, org.springframework.security.web.access.ExceptionTranslationFilter@13cda7c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55caeb35]
+
+2021-10-17 14:08:44,550 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,549 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["https-jsse-nio-0.0.0.0-4443"]
+
+2021-10-17 14:08:44,784 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,783 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 4443 (https) with context path ''
+
+2021-10-17 14:08:44,793 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,793 [main] io.openvidu.server.OpenViduServer - Started OpenViduServer in 4.136 seconds (JVM running for 6.773)
+
+2021-10-17 14:08:44,800 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:44,799 [main] io.openvidu.server.OpenViduServer -
+
+----------------------------------------------------
+
+   OpenVidu is ready!
+   ---------------------------
+
+   * OpenVidu Server URL: https://localhost:4443/
+
+   * OpenVidu Dashboard: https://localhost:4443/dashboard
+
+----------------------------------------------------
+
+
+2021-10-17 14:08:53,496 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:53,496 [https-jsse-nio-0.0.0.0-4443-exec-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2021-10-17 14:08:53,497 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:53,497 [https-jsse-nio-0.0.0.0-4443-exec-5] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+
+2021-10-17 14:08:53,509 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:53,509 [https-jsse-nio-0.0.0.0-4443-exec-5] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+
+2021-10-17 14:08:53,808 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:53,807 [https-jsse-nio-0.0.0.0-4443-exec-5] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions {mediaMode=ROUTED, recordingMode=MANUAL, customSessionId=, forcedVideoCodec=VP8, allowTranscoding=false, defaultRecordingProperties={name=, hasAudio=true, hasVideo=true, outputMode=COMPOSED, recordingLayout=BEST_FIT, resolution=1280x720, frameRate=25, shmSize=536870912}}
+
+2021-10-17 14:08:53,820 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:53,820 [https-jsse-nio-0.0.0.0-4443-exec-5] io.openvidu.server.rest.SessionRestController - New session ses_ZKU0ac3vER created [ses_ZKU0ac3vER]
+
+2021-10-17 14:08:53,951 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:53,951 [https-jsse-nio-0.0.0.0-4443-exec-10] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":-1}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,716 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,716 [https-jsse-nio-0.0.0.0-4443-exec-91] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":38}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,770 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,769 [https-jsse-nio-0.0.0.0-4443-exec-13] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":41}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,871 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,870 [https-jsse-nio-0.0.0.0-4443-exec-31] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":51}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,902 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,902 [https-jsse-nio-0.0.0.0-4443-exec-6] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":44}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,953 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,953 [https-jsse-nio-0.0.0.0-4443-exec-53] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":2}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,957 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,956 [https-jsse-nio-0.0.0.0-4443-exec-34] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":5}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:54,980 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:54,974 [https-jsse-nio-0.0.0.0-4443-exec-98] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":0}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,097 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,093 [https-jsse-nio-0.0.0.0-4443-exec-28] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":7}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,093 [https-jsse-nio-0.0.0.0-4443-exec-49] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":87}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,111 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,110 [https-jsse-nio-0.0.0.0-4443-exec-9] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":64}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,115 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,112 [https-jsse-nio-0.0.0.0-4443-exec-84] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":28}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,145 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,136 [https-jsse-nio-0.0.0.0-4443-exec-62] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":8}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,152 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,148 [https-jsse-nio-0.0.0.0-4443-exec-95] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":19}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,247 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,247 [https-jsse-nio-0.0.0.0-4443-exec-37] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":92}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,316 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,316 [https-jsse-nio-0.0.0.0-4443-exec-57] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":31}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,319 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,319 [https-jsse-nio-0.0.0.0-4443-exec-29] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":88}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,323 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,320 [https-jsse-nio-0.0.0.0-4443-exec-21] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":21}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,324 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,324 [https-jsse-nio-0.0.0.0-4443-exec-14] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":36}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,331 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,328 [https-jsse-nio-0.0.0.0-4443-exec-7] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":96}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,329 [https-jsse-nio-0.0.0.0-4443-exec-67] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":12}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,375 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,375 [https-jsse-nio-0.0.0.0-4443-exec-36] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":30}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,401 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,401 [https-jsse-nio-0.0.0.0-4443-exec-51] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":45}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,519 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,518 [https-jsse-nio-0.0.0.0-4443-exec-24] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":34}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,557 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,557 [https-jsse-nio-0.0.0.0-4443-exec-30] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":91}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,563 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,562 [https-jsse-nio-0.0.0.0-4443-exec-2] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":26}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,577 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,576 [https-jsse-nio-0.0.0.0-4443-exec-88] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":40}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,578 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,576 [https-jsse-nio-0.0.0.0-4443-exec-55] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":17}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,578 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,578 [https-jsse-nio-0.0.0.0-4443-exec-15] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":80}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,579 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,578 [https-jsse-nio-0.0.0.0-4443-exec-52] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":66}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,583 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,583 [https-jsse-nio-0.0.0.0-4443-exec-35] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":85}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,583 [https-jsse-nio-0.0.0.0-4443-exec-86] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":59}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,584 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,583 [https-jsse-nio-0.0.0.0-4443-exec-93] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":20}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,583 [https-jsse-nio-0.0.0.0-4443-exec-3] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":78}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,585 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,585 [https-jsse-nio-0.0.0.0-4443-exec-23] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":58}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,585 [https-jsse-nio-0.0.0.0-4443-exec-87] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":42}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,586 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,585 [https-jsse-nio-0.0.0.0-4443-exec-96] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":83}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,592 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,377 [https-jsse-nio-0.0.0.0-4443-exec-12] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":27}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,587 [https-jsse-nio-0.0.0.0-4443-exec-22] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":43}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,588 [https-jsse-nio-0.0.0.0-4443-exec-16] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":33}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,589 [https-jsse-nio-0.0.0.0-4443-exec-79] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":16}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,591 [https-jsse-nio-0.0.0.0-4443-exec-56] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":82}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,596 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,593 [https-jsse-nio-0.0.0.0-4443-exec-97] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":15}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,585 [https-jsse-nio-0.0.0.0-4443-exec-1] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":67}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,595 [https-jsse-nio-0.0.0.0-4443-exec-39] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":32}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,602 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,602 [https-jsse-nio-0.0.0.0-4443-exec-60] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":89}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,607 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,607 [https-jsse-nio-0.0.0.0-4443-exec-8] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":93}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,611 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,611 [https-jsse-nio-0.0.0.0-4443-exec-40] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":39}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,625 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,625 [https-jsse-nio-0.0.0.0-4443-exec-33] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":13}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,644 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,644 [https-jsse-nio-0.0.0.0-4443-exec-64] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":18}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,659 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,659 [https-jsse-nio-0.0.0.0-4443-exec-77] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":60}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,658 [https-jsse-nio-0.0.0.0-4443-exec-46] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":35}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,666 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,665 [https-jsse-nio-0.0.0.0-4443-exec-83] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":37}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,669 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,668 [https-jsse-nio-0.0.0.0-4443-exec-10] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":14}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,675 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,675 [https-jsse-nio-0.0.0.0-4443-exec-70] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":57}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,676 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,675 [https-jsse-nio-0.0.0.0-4443-exec-80] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":70}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,680 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,676 [https-jsse-nio-0.0.0.0-4443-exec-20] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":25}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,694 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,693 [https-jsse-nio-0.0.0.0-4443-exec-42] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":77}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,705 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,705 [https-jsse-nio-0.0.0.0-4443-exec-4] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":81}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,712 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,712 [https-jsse-nio-0.0.0.0-4443-exec-18] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":79}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,713 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,712 [https-jsse-nio-0.0.0.0-4443-exec-47] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":76}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,717 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,717 [https-jsse-nio-0.0.0.0-4443-exec-61] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":10}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,721 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,721 [https-jsse-nio-0.0.0.0-4443-exec-54] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":22}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,723 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,722 [https-jsse-nio-0.0.0.0-4443-exec-85] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":97}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,726 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,726 [https-jsse-nio-0.0.0.0-4443-exec-68] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":63}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,738 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,736 [https-jsse-nio-0.0.0.0-4443-exec-38] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":23}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,747 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,740 [https-jsse-nio-0.0.0.0-4443-exec-13] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":86}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,741 [https-jsse-nio-0.0.0.0-4443-exec-26] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":9}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,768 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,768 [https-jsse-nio-0.0.0.0-4443-exec-5] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":24}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,768 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,744 [https-jsse-nio-0.0.0.0-4443-exec-11] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":49}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,769 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,745 [https-jsse-nio-0.0.0.0-4443-exec-78] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":95}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,769 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,746 [https-jsse-nio-0.0.0.0-4443-exec-94] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":65}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,798 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,746 [https-jsse-nio-0.0.0.0-4443-exec-73] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":46}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,749 [https-jsse-nio-0.0.0.0-4443-exec-58] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":53}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,754 [https-jsse-nio-0.0.0.0-4443-exec-19] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":71}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,799 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,760 [https-jsse-nio-0.0.0.0-4443-exec-91] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":47}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,799 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,760 [https-jsse-nio-0.0.0.0-4443-exec-71] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":48}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,761 [https-jsse-nio-0.0.0.0-4443-exec-45] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":11}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,802 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,800 [https-jsse-nio-0.0.0.0-4443-exec-41] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":72}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,802 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,802 [https-jsse-nio-0.0.0.0-4443-exec-31] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":75}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,805 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,805 [https-jsse-nio-0.0.0.0-4443-exec-63] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":98}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,808 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,808 [https-jsse-nio-0.0.0.0-4443-exec-25] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":61}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,808 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,808 [https-jsse-nio-0.0.0.0-4443-exec-89] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":94}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,790 [https-jsse-nio-0.0.0.0-4443-exec-72] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":99}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,809 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,792 [https-jsse-nio-0.0.0.0-4443-exec-27] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":90}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,820 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,820 [https-jsse-nio-0.0.0.0-4443-exec-74] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":56}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,825 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,824 [https-jsse-nio-0.0.0.0-4443-exec-69] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":84}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,824 [https-jsse-nio-0.0.0.0-4443-exec-17] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":54}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,823 [https-jsse-nio-0.0.0.0-4443-exec-76] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":52}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,830 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,822 [https-jsse-nio-0.0.0.0-4443-exec-90] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":69}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,827 [https-jsse-nio-0.0.0.0-4443-exec-65] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":74}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,827 [https-jsse-nio-0.0.0.0-4443-exec-92] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":4}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,827 [https-jsse-nio-0.0.0.0-4443-exec-48] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":62}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+[INFO] 2021-10-17 14:08:55,829 [https-jsse-nio-0.0.0.0-4443-exec-81] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":50}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,831 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,822 [https-jsse-nio-0.0.0.0-4443-exec-82] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":73}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,835 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,834 [https-jsse-nio-0.0.0.0-4443-exec-75] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":29}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,837 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,820 [https-jsse-nio-0.0.0.0-4443-exec-66] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":55}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}
+
+2021-10-17 14:08:55,842 DEBG 'openvidu-server' stdout output:
+[INFO] 2021-10-17 14:08:55,842 [https-jsse-nio-0.0.0.0-4443-exec-44] io.openvidu.server.rest.SessionRestController - REST API: POST /openvidu/api/sessions/ses_ZKU0ac3vER/connection {type=null, data={"userId":68}, role=PUBLISHER, kurentoOptions=null, rtspUri=null, networkCache=null}

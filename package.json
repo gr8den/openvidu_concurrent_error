@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "docker --version && node --version && node src/index.js"
+  },
+  "dependencies": {
+    "openvidu-node-client": "2.20.0"
+  }
+}

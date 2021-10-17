@@ -1,0 +1,25 @@
+
+> start
+> docker --version && node --version && node src/index.js
+
+Docker version 20.10.8, build 3967b7d
+v14.17.6
+script started
+Creating OV
+
+Creating session...
+(node:22263) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Session created
+
+Try create single connection...
+Connection created
+
+Creating connections...
+Wait promises...
+(node:22263) UnhandledPromiseRejectionWarning: Error: [object Object]
+    at Session.handleError (/Users/gr8/sandbox/openvidu_bug/node_modules/openvidu-node-client/lib/Session.js:598:20)
+    at /Users/gr8/sandbox/openvidu_bug/node_modules/openvidu-node-client/lib/Session.js:152:23
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+(node:22263) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:22263) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
